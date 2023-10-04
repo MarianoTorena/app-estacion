@@ -1,0 +1,74 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/panel.html */
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/panel.html */
+
+#list-estacion {
+	height: 100vh;
+	width: max-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1vh;
+}
+
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/panel.html */
+
+a.btn-estacion {
+	width: 110%;
+	text-decoration: none;
+	color: white;
+	background: blueviolet;
+	padding: .5rem;
+	border-radius: 10px;
+	gap: 5px;
+	display: flex;
+	flex-direction: column;
+}
+.btn-estacion:hover{
+	background: rgb(140, 43, 200);
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/panel.html */
+
+.estacion-apodo{
+	font-weight: bold;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/panel.html */
+
+.estacion-ubicacion, .estacion-visitas {
+	font-size: 13pt;
+	display: flex;
+	align-items: center;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/panel.html */
+
+.estacion-visitas {
+	justify-content: end;
+}
+
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/panel.html */
+
+.title {
+  width: 110%;
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+
