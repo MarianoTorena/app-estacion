@@ -1,0 +1,203 @@
+#table-btns {
+  height: ;
+  width: 100%;
+  border: solid 1px;
+  height: 10vh;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+}
+
+.panel-content {
+  height: 90vh;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#btns {
+  display: flex;
+  height: 5vh;
+  gap: 10px;
+  padding: 10px;
+}
+
+#btns button{
+  color: white;
+  font-weight: bold;
+  font-size: 12pt;
+  border: none;
+  outline:none;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background: #afafaf ;
+  border-radius: 10px;
+}
+
+#btns button:hover{
+  background: #54aecb;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#myChart {
+  width: 361px;
+  height: 290px;
+  background-color: rgba(0, 0, 0, 0);
+  display: block;
+}
+
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/html/detalle.php?chipid=11214452 */
+
+#panel-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/html/detalle.php?chipid=11214452 */
+
+#topInfo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#main__table tr, .important-val-int, .item-value{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+
+#main__table tr td{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+p{
+  margin: 0;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/html/detalle.php?chipid=11214452 */
+
+.panel-col {
+  display: flex;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/html/detalle.php?chipid=11214452 */
+
+div.col-items{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/html/detalle.php?chipid=11214452 */
+.dflex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fs18{
+  font-size: 18pt;
+}
+.bold{
+  font-weight: bold;
+}
+div.col-items .item{
+  /* align-content: center; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/html/detalle.php?chipid=11214452 */
+
+#main__table .item-title{
+  text-align: center;
+  margin: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/html/detalle.php?chipid=11214452 */
+
+#panel-grafico {
+  height: 50%;
+}
+
+/* detalle.css | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/css/detalle.css */
+
+#panel-info {
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
+  height: 50%;
+}
+
+#topInfo {
+  flex-direction: column;
+}
+
+
+/* detalle.css | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/css/detalle.css */
+
+.panel-col {
+  justify-content: center;
+}
+
+
+/* detalle.css | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/css/detalle.css */
+
+#panel-info {
+  /* height: 50%; */
+  height: 35%;
+}
+
+#panel-grafico {
+  /* height: 50%; */
+  height: 55%;
+  display: flex;
+  margin-top: 5%;
+}
+
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/html/detalle.php?chipid=11214452 */
+
+#main__table {
+  /* width: max-content; */
+  background-color: lightblue;
+  height: max-content;
+  padding: 1rem;
+  width: 50%;
+  display: ;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/html/detalle.php?chipid=11214452 */
+
+.table {
+  display: flex;
+  justify-content: center;
+}
+.explore{
+  flex-direction: row !important;
+  align-items: center;
+}
