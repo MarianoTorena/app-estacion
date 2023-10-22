@@ -1,4 +1,4 @@
-// Evento que se ejecuta cuando se carga completamente la pÃ¡gina
+ // Evento que se ejecuta cuando se carga completamente la pÃ¡gina
 document.addEventListener("DOMContentLoaded", () => {
 
 	// pedimos las estaciones
@@ -28,7 +28,7 @@ function addBtnEstacion(info){
 	let clon = tpl.content.cloneNode(true)
 
 	// cargamos los datos del botÃ³n clonado
-	clon.querySelector(".btn-estacion").setAttribute("href", "../html/detalle.php?chipid="+info.chipid)
+	clon.querySelector(".btn-estacion").setAttribute("href", `detalle/${info.chipid}`)
 	clon.querySelector(".estacion-ubicacion").innerHTML= '<span class="material-symbols-outlined">location_on</span>'+info.ubicacion
 	clon.querySelector(".estacion-visitas").innerHTML = info.visitas+'<span class="material-symbols-outlined">visibility</span>'
 	clon.querySelector(".estacion-apodo").innerHTML = info.apodo

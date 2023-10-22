@@ -9,11 +9,20 @@ document.addEventListener("DOMContentLoaded", async function (event){
   //busca el chipId
   chipid = document.querySelector("#chipid").innerHTML;
   console.log("Web Cargada para el chipid: " + chipid);
+  addVisitStation();
   await refreshDatos(MAX_DATOS);
   refreshView('temperatura');
   // si es un chip mio recarga cada 10 seg y con 1 solo dato nuevo
   refreshId = setInterval(refreshDatos, INTERVAL_REFRESH, 7);
 })
+
+// Incrementa las visitas en una estacion especifica
+async function addVisitStation(){
+  const response = await fetch("https://mattprofe.com.ar/proyectos/app-estacion/datos.php?chipid=" + chipid + "&mode=visit-station")
+  const data = await response.json()
+
+  return data
+}
 
 async function refreshDatos(cantfilas) {
   const response = await fetch("https://mattprofe.com.ar/proyectos/app-estacion/datos.php?chipid=" + chipid + "&cant=" + cantfilas)

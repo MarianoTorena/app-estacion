@@ -1,0 +1,79 @@
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/landing */
+
+.title-primary > h1:nth-child(1) {
+  margin: 0;
+  font-size: 25pt;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/landing */
+
+.content-text {
+  height: 80%;
+  font-size: 16pt;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/landing */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/landing */
+
+.title-primary {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/landing */
+
+#wrapper {
+  height: 60vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/landing */
+
+.text {
+  width: 70%;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/landing */
+
+.btn-panel {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px ;
+}
+.btn-panel:hover{
+  cursor: pointer;
+  color: white;
+  background-color: #54aecb;
+}
+
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/landing */
+
+.content {
+  width: 75%;
+  background-color: lightblue;
+  margin: ;
+  padding: 1rem;
+  border: solid 2px #54aecb;
+  border-radius: 15px ;
+}
+

@@ -201,3 +201,19 @@ div.col-items .item{
   flex-direction: row !important;
   align-items: center;
 }
+.btn-volver{
+  padding: 5px;
+  margin: 10px;
+  height: max-content;
+  position: absolute;
+  display: block;
+  background-color: #afafaf;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.btn-volver:hover{
+  background-color: #54aecb;
+  transform: scale(1.1);
+}

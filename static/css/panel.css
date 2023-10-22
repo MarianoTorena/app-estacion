@@ -30,7 +30,7 @@ a.btn-estacion {
 	width: 110%;
 	text-decoration: none;
 	color: white;
-	background: blueviolet;
+	background: #54aecb;
 	padding: .5rem;
 	border-radius: 10px;
 	gap: 5px;
@@ -38,7 +38,7 @@ a.btn-estacion {
 	flex-direction: column;
 }
 .btn-estacion:hover{
-	background: rgb(140, 43, 200);
+	transform: scale(1.1);
 }
 
 /* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/panel.html */

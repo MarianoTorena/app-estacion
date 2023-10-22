@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../css/detalle.css">
+	<link rel="stylesheet" href="{{URL_APP}}/static/css/detalle.css{{CACHE}}">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-	<title>Detalle</title>
+	<title>{{APP_NAME}}</title>
 </head>
 <body>
 	<!-- Inicio Seccion de Template -->
@@ -166,10 +166,11 @@
 	<!-- Fin Seccion de Template -->
 
 		<!-- ChipId Oculto -->
-		<div id="chipid" style="display: none;"><?php echo $_GET['chipid'] ?></div>
+		<div id="chipid" style="display: none;">{{CHIP_ID}}</div>
 
 	<!-- Inicio Contenedor -->
 		<div class="wrapper">
+			<a href="{{URL_APP}}/panel" class="btn-volver">Volver</a>
 			<!-- Seccion Informacion -->
 			<div class="panel-content">
 				<div id="panel-info">
@@ -204,7 +205,7 @@
 	
 	<!-- Scripts -->
 		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-		<script type="text/javascript" src="../js/detalle.js"></script>
+		<script type="text/javascript" src="{{URL_APP}}/js/detalle.js{{CACHE}}"></script>
 	<!-- FinScripts -->
 </body>
 </html>
