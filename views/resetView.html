@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{URL_APP}}/static/css/login.css{{CACHE}}">
+	<title>{{APP_NAME}}</title>
+</head>
+<body>
+	<div id="txtContenido" style="display: none;">
+		<h1>Se restablecio su contrasenia correctamente</h1>
+		<p>Informacion</p>
+		<p>Ip: {{ip_disp}}</p>
+		<p>Sis. Operativo: {{sis_operativo}}</p>
+		<p>Navegador: {{navegador}}</p>
+		<a id="mail_url" href="{{URL_APP}}/blocked/">No fui yo, bloquear cuenta</a>
+	</div>
+	<div id="wrapper">
+		<div id="cont">
+			<div id="email" style="display: none;">{{email}}</div>
+			<div id="token_action" style="display: none;">{{token_action}}</div>
+			<h1>Restablece tu contrasenia de {{APP_NAME}}</h1>
+			<h2 id="error__text" style="color: red; text-align: center;"></h2>
+			
+			<form id="main__form" action="" method="POST" style="display: none;">
+				<input type="password" id="txt_pass" class="btn input" placeholder="Password" name="txt_pass">
+				<input type="password" id="txt_pass2" class="btn input" placeholder="Repeat password" name="txt_pass2">
+				<input type="submit" class="btn submit" name="submit" value="Acceder">
+			</form>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="{{URL_APP}}/js/reset.js{{CACHE}}"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{URL_APP}}/static/css/login.css{{CACHE}}">
+	<title>{{APP_NAME}}</title>
+</head>
+<body>
+	<div id="userState" style="display: none;">{{userState}}</div>
+	<h2 id="error__text" style="color: red; text-align: center;"></h2>
+	<div id="txtContenido" style="display: none;">
+		<h1>Su usuario fue bloqueado</h1>
+		<a id="mail_url" href="{{URL_APP}}/reset/{{token_action}}">Click aquí para cambiar contraseña</a>
+	</div>
+	<div id="infoUser" style="display: none;">
+		<div id="txt_email">{{emailUser}}</div>
+	</div>
+	<script type="text/javascript" src="{{URL_APP}}/js/blockUser.js{{CACHE}}"></script>
+</body>
+</html>

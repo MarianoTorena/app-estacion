@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{URL_APP}}/static/css/login.css{{CACHE}}">
+	<title>{{APP_NAME}}</title>
+</head>
+<body>
+	<div id="txtContenido" style="display: none;">
+		<h1>Se Inicio sesion en un dispositivo</h1>
+		<p>Informacion</p>
+		<p>Ip: {{ip_disp}}</p>
+		<p>Sis. Operativo: {{sis_operativo}}</p>
+		<p>Navegador: {{navegador}}</p>
+		<a id="mail_url" href="{{URL_APP}}/blocked/">No fui yo, bloquear cuenta</a>
+	</div>
+	<div id="wrapper">
+		<div id="cont">
+		<div id="chipId" style="display: none;">{{CHIP_ID}}</div>
+		<h1>Loguearse es muy sencillo en {{APP_NAME}}</h1>
+		<h2 id="error__text" style="color: red; text-align: center;"></h2>
+		<form id="main__form" action="" method="POST">
+			<input type="email" id="txt_email" class="btn input" placeholder="Email" name="txt_email">
+			<input type="password" id="txt_pass" class="btn input" placeholder="password" name="txt_pass">
+			<input type="submit" class="btn submit" name="submit" value="Acceder">
+		</form>
+		<div class="cont-btns">
+			<a class="btn submit" href="{{URL_APP}}/recovery">¿Olvidaste tu contraseña?</a>
+			<a class="btn submit" href="{{URL_APP}}/register/{{CHIP_ID}}">No tienes una cuenta? Registrarse</a>
+		</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="{{URL_APP}}/js/login.js{{CACHE}}"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/login */
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/login/1726113 */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/login/1726113 */
+
+#wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 15%;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/login/1726113 */
+
+#main__form {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+#main__form {
+  display: flex;
+  height: max-content;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+}
+
+.btn{
+  color: white;
+  font-weight: bold;
+  font-size: 12pt;
+  border: none;
+  outline:none;
+  text-align: center;
+  min-height: 4vh;
+  height: max-content;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input{
+  color: #54aecb;
+  background: white!important;
+}
+/*submit*/
+.submit{
+  background: #54aecb;
+}
+a{
+  text-decoration: none;
+}
+.submit:hover{
+  background: white;
+  color: #54aecb;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#cont{
+  background: #9dd1e1;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.cont-btns{
+  display: flex;
+  height: max-content;
+  gap: 10px;
+  padding: 10px;
+}
+.fs-14{
+  font-size: 14pt;
+}

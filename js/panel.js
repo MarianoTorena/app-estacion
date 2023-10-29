@@ -1,6 +1,8 @@
  // Evento que se ejecuta cuando se carga completamente la pÃ¡gina
 document.addEventListener("DOMContentLoaded", () => {
-
+	if (document.querySelector("#btn_logout").innerHTML == "") {
+		document.querySelector("#btn_logout").style.display = 'none';
+	}
 	// pedimos las estaciones
 	loadEstaciones().then( data => {
 

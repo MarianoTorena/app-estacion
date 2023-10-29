@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{URL_APP}}/static/css/login.css{{CACHE}}">
+	<title>{{APP_NAME}}</title>
+</head>
+<body>
+	<!-- Email -->
+	<div id="txtContenido" style="display: none;">
+		<h1>Inicio el proceso de restablecimiento de contraseña</h1>
+		<a id="mail_url" href="{{URL_APP}}/reset/">Click aquí para restablecer contraseña</a>
+	</div>
+	<!-- Contenedor -->
+	<div id="wrapper">
+		<div id="cont">
+			<h1>Restablecimiento de contraseña en {{APP_NAME}}</h1>
+
+		<h2 id="error__text" style="color: red;"></h2>
+		<div id="msj_register" style="display: none;">
+			<a href="{{URL_APP}}/register">Registrarse</a>
+		</div>
+		<form id="main__form" action="" method="POST">
+			<input type="email" id="txt_email" class="btn input" placeholder="Email" name="txt_email">
+			<input type="submit" name="submit" class="btn submit" value="Enviar">
+		</form>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="{{URL_APP}}/js/recovery.js{{CACHE}}"></script>
+</body>
+</html>

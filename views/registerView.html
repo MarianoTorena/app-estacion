@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{URL_APP}}/static/css/login.css{{CACHE}}">
+	<title>{{APP_NAME}}</title>
+	
+</head>
+<body>
+	<div id="txtContenido" style="display: none;">
+		<h1>Bienvenido a app-estacion:</h1>
+		<p id="mail_parrafo">Su siguiente paso es activar su usuario</p>
+		<a id="mail_url" href="{{URL_APP}}/validate/">Click aquí para activar tu usuario</a>
+	</div>
+	<div id="wrapper">
+		<div id="cont">
+			<h1>Registrarse es muy sencillo en {{APP_NAME}}</h1>
+			<h2 id="error__text" style="color: red;"></h2>
+			<form id="main__form" action="" method="POST">
+				<input type="email" id="txt_email" class="btn input" placeholder="Email" name="txt_email">
+				<input type="password" id="txt_pass" class="btn input" placeholder="Password" name="txt_pass">
+				<input type="password" id="txt_pass2" class="btn input" placeholder="Repeat password" name="txt_pass">
+				<input type="submit" name="submit" class="btn submit" value="Registrarse">
+			</form>
+			<a class="btn submit fs-14" href="{{URL_APP}}/login">Inicia Sesion</a>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="{{URL_APP}}/js/register.js{{CACHE}}"></script>
+</body>
+</html>

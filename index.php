@@ -1,10 +1,14 @@
-<?php 
+	<?php 
 
 	session_start();
-
-	include('lib/enginetpl.php');
-	include('env.php');
-
+	include ('Mailer/src/PHPMailer.php');
+	include ('Mailer/src/SMTP.php');
+	include ('Mailer/src/Exception.php');
+	include ('lib/enginetpl.php');
+	include ('env.php');
+	include ('models/dbAbstract.php');
+	include ('models/userModel.php');
+	include ('models/usuarioModel.php');
 
 	if(!isset($_SESSION[APP_NAME])){
 		$_SESSION[APP_NAME] = array();
