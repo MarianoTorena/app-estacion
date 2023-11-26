@@ -1,0 +1,44 @@
+
+/* login.css | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/static/css/login.css?rand=20231126182525 */
+
+#wrapper {
+  /* margin-top: 15%; */
+  margin-top: 0% !important;
+}
+
+.btn {
+  /* font-size: 12pt; */
+  /* min-height: 4vh; */
+  /* width: 100%; */
+  font-size: 2vh !important;
+  min-height: 3.5vh !important;
+  max-width: 20vw;
+}
+
+.submit:hover {
+  border-color: #54aecb !important;
+  border: solid 2px !important;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/admin */
+
+#header {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column-reverse !important;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/admin */
+
+h1 {
+  width: 100% !important;
+  text-align: center !important;
+}
+
+/* Elemento | https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/admin */
+
+#cont-btns {
+  display: flex !important;
+  padding: 1vh 1vw !important;
+  justify-content: space-between !important;
+}

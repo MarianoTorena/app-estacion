@@ -100,5 +100,13 @@
 			// var_dump($response);
 			return array("errno" => 200, "error" => "Se reestablecio correctamente", "token" => $response[0]['token'], "email" => $email);
 		}
+
+		public function listClientsLocation(){
+			$sql = "SELECT `ip`,`latitud`,`longitud`,`pais`,`access` FROM `appestacion__iptracker`";
+			$response = $this->query($sql);
+			return array("errno" => 200, "error" => "consulta exitosa", "data" => $response);
+		}
+
+
 	}
  ?>

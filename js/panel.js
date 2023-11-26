@@ -1,5 +1,6 @@
  // Evento que se ejecuta cuando se carga completamente la pÃ¡gina
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", ()=>{
+
 	if (document.querySelector("#btn_logout").innerHTML == "") {
 		document.querySelector("#btn_logout").style.display = 'none';
 	}
@@ -13,7 +14,36 @@ document.addEventListener("DOMContentLoaded", () => {
 			addBtnEstacion(element)
 		})
 	})
+
+	getDataByIp().then(infoClient => {
+		console.log(infoClient)
+		addregistro(infoClient).then(request =>{
+
+		})
+	})
+
 })
+
+async function addregistro(infoClient){
+
+	let info = {
+		country: infoClient.country,
+	  	ip: infoClient.ip,
+	  	long: infoClient.longitude,
+	  	lat: infoClient.latitude
+	}
+	const response = await fetch("https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/api/tracker/addClientTracker",{
+		method:'POST',
+		headers: {
+		   'Accept': 'application/json',
+		   'Content-Type': 'application/json'
+		  },
+		body: JSON.stringify({'info': info})
+	});
+	const data = await response.json()
+
+	return data
+}
 
 // PeticiÃ³n asincrona de la lista de estaciones
 async function loadEstaciones(){
@@ -21,6 +51,14 @@ async function loadEstaciones(){
 	const data = await response.json()
 
 	return data
+}
+
+async function getDataByIp(){
+	let ip = document.getElementById('ip-user').innerHTML;
+	const response = await fetch(`https://ipwho.is/${ip}`)
+	const data = await response.json()
+
+	return data;
 }
 
 // Crea un nuevo botÃ³n con los datos de info
@@ -38,3 +76,4 @@ function addBtnEstacion(info){
 	// Agrega un nuevo botÃ³n de estaciÃ³n
 	document.querySelector("#list-estacion").appendChild(clon)
 }
+

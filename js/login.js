@@ -7,8 +7,8 @@ main__form.addEventListener('submit',async e=>{
 		body: data
 	});
 	var info = await response.json();
-	// console.log(info);
 	// Se logueo correctamente
+
 	if(info.errno == 200){
 		// Se arma el mail
 		error__text.style.color = "green" ;
@@ -28,6 +28,9 @@ main__form.addEventListener('submit',async e=>{
 			}
 			
 		})		
+	}else if(info.errno == 201){
+		error__text.style.color = "green" ;
+		window.location.href = `https://mattprofe.com.ar/alumno/3882/ACTIVIDADES/app-estacion/admin`;
 	}
 	error__text.textContent = info.error;
 	

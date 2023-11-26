@@ -8,7 +8,11 @@
 	}else{
 		$tpl->assignVar("LOGOUT", '');
 	}
-	
+
+	$tpl->assignVar("USERIP", $_SERVER["REMOTE_ADDR"]);
+
 	$tpl->printToScreen();
+
+	
 
  ?>
